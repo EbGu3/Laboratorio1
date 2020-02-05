@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Laboratorio1",
+    "\\Laboratorio1\\Controllers",
+    "\\Laboratorio1\\Models"
   ],
-  "SelectedNode": "\\Laboratorio1.sln",
+  "SelectedNode": "\\Laboratorio1\\WeatherForecast.cs",
   "PreviewInSolutionExplorer": false
 }
