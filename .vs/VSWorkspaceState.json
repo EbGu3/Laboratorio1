@@ -5,6 +5,6 @@
     "\\Laboratorio1\\Controllers",
     "\\Laboratorio1\\Models"
   ],
-  "SelectedNode": "\\Laboratorio1\\WeatherForecast.cs",
+  "SelectedNode": "\\Laboratorio1\\Controllers\\WeatherForecastController.cs",
   "PreviewInSolutionExplorer": false
 }
