@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using GaseosaLab01.Models;
+using System.Diagnostics;
 
 namespace Laboratorio1.Controllers
 {
@@ -20,11 +21,26 @@ namespace Laboratorio1.Controllers
         {
             var jsonString = jsonObtenido.ToString();
             var nueva = JsonConvert.DeserializeObject<Bebidas>(jsonString);
-            string nnueva = nueva.ToString();
+
             Bebidas miBebida = new Bebidas();
-            
-            Data.Instance.Arbolito1.Insertar(nueva.Posicion, nueva.Sabor);
-            Data.Instance.Arbolito1.Insertar(nueva.Posicion, nueva.Sabor);
+            miBebida.Nombre = nueva.Nombre;
+            miBebida.Posicion = nueva.Posicion;
+            miBebida.Sabor = nueva.Sabor;
+            miBebida.Volumen = nueva.Volumen;
+            miBebida.casaProductora = miBebida.casaProductora;
+
+
+            Data.Instance.Arbolito1.Insertar(nueva.Nombre, miBebida);
+
+            Data.Instance.data1.Add(miBebida);
+
+        }
+
+        [HttpGet]
+
+        public List<Bebidas> ReturnDatas()
+        {
+            return Data.Instance.data1.OrderBy(o => o.Nombre).ToList();
         }
   
     }

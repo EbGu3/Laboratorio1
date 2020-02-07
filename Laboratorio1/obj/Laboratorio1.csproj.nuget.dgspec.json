@@ -1,31 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexa\\OneDrive\\Escritorio\\ED2Labs\\Estructuras2\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj": {}
+    "/Users/eber.g/Desktop/PrimerAño/EstructuraDatos_2/Laboratorio/Laboratorio1/Laboratorio1/Laboratorio1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexa\\OneDrive\\Escritorio\\ED2Labs\\Estructuras2\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj": {
+    "/Users/eber.g/Desktop/PrimerAño/EstructuraDatos_2/Laboratorio/Laboratorio1/Laboratorio1/Laboratorio1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Escritorio\\ED2Labs\\Estructuras2\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
+        "projectUniqueName": "/Users/eber.g/Desktop/PrimerAño/EstructuraDatos_2/Laboratorio/Laboratorio1/Laboratorio1/Laboratorio1.csproj",
         "projectName": "Laboratorio1",
-        "projectPath": "C:\\Users\\alexa\\OneDrive\\Escritorio\\ED2Labs\\Estructuras2\\Laboratorio1\\Laboratorio1\\Laboratorio1.csproj",
-        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexa\\OneDrive\\Escritorio\\ED2Labs\\Estructuras2\\Laboratorio1\\Laboratorio1\\obj\\",
+        "projectPath": "/Users/eber.g/Desktop/PrimerAño/EstructuraDatos_2/Laboratorio/Laboratorio1/Laboratorio1/Laboratorio1.csproj",
+        "packagesPath": "/Users/eber.g/.nuget/packages/",
+        "outputPath": "/Users/eber.g/Desktop/PrimerAño/EstructuraDatos_2/Laboratorio/Laboratorio1/Laboratorio1/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/eber.g/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +38,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
         }
       }
     }
