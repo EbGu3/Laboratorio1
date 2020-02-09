@@ -150,5 +150,19 @@ namespace GaseosaLab01.Models
             }
             padreNodo.Hijos.Insert(nodoCorrer + 1, nuevoNodo);
         }
+
+
+        public void Busqueda(string id)
+        {
+            if (id == Data.Instance.Arbolito1.Search(id).Apuntador.Nombre)
+            {
+                Data.Instance.data2.Add(Data.Instance.Arbolito1.Search(id).Apuntador);
+            }
+            else
+            {
+                throw new Exception("El valor ingresado no esta en el arbol");
+            }
+
+        }
     }
 }

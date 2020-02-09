@@ -15,7 +15,14 @@ namespace Laboratorio1.Controllers
     public class WeatherForecastController : ControllerBase
     {
 
-        
+        [HttpGet]
+        public ActionResult<string> Principal()
+        {
+
+            return "HOLA";
+        }
+
+
         [HttpPost]
         public void Post([FromBody]object jsonObtenido)
         {
@@ -24,10 +31,9 @@ namespace Laboratorio1.Controllers
 
             Bebidas miBebida = new Bebidas();
             miBebida.Nombre = nueva.Nombre;
-            miBebida.Posicion = nueva.Posicion;
             miBebida.Sabor = nueva.Sabor;
             miBebida.Volumen = nueva.Volumen;
-            miBebida.casaProductora = miBebida.casaProductora;
+            miBebida.casaProductora = nueva.casaProductora;
 
 
             Data.Instance.Arbolito1.Insertar(nueva.Nombre, miBebida);
@@ -36,12 +42,24 @@ namespace Laboratorio1.Controllers
 
         }
 
-        [HttpGet]
+        [HttpGet("{id?}")]
+        public List<Bebidas> Return([FromBody]object id)
+        {
+            if(id != null)
+            {
+                var jsonString = id.ToString();
+                var nueva = JsonConvert.DeserializeObject<Bebidas>(jsonString);
+                Data.Instance.Arbolito1.Busqueda(nueva.Nombre);
+                
+            }
+            return Data.Instance.data2;
+        }
 
-        public List<Bebidas> ReturnDatas()
+        [HttpGet("MostrarArbol")]
+        public List<Bebidas> ReturnData()
         {
             return Data.Instance.data1.OrderBy(o => o.Nombre).ToList();
         }
-  
+
     }
 }

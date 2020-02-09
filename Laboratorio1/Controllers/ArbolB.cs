@@ -7,6 +7,7 @@ namespace Laboratorio1.Controllers
 {
     public class ArbolB
     {
+        /*
         internal int PosicionAproxNodo(int key )
         {
             int pos = key.Count; 
@@ -20,5 +21,6 @@ namespace Laboratorio1.Controllers
             }
             return pos;
         }
+        */
     }
 }

@@ -8,7 +8,6 @@ namespace GaseosaLab01.Models
     public class Bebidas
     {
         public string Sabor { get; set; }
-        public string Posicion { get; set; }
         public string Nombre { get; set; }
         public double Volumen { get; set; }
         public double Precio { get; set; }

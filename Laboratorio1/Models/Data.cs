@@ -21,5 +21,8 @@ namespace GaseosaLab01.Models
 		public const int GRADO_A = 5;
 		public BArbol<string, Bebidas> Arbolito1 = new BArbol<string, Bebidas>(GRADO_A);
 		public List<Bebidas> data1 = new List<Bebidas>();
+		public List<Bebidas> data2 = new List<Bebidas>();
+
+
 	}
 }
